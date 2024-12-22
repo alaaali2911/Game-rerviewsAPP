@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="CSS/all.min.css" />
+    <link rel="stylesheet" href="CSS/bootstrap.min.css" />
+    <link rel="stylesheet" href="CSS/fontawesome.min.css" />
+    <link rel="stylesheet" href="CSS/index.css" />
+    <title>Gamereview</title>
+  </head>
+  <body data-theme="dark">
+    <section class="home">
+      <header>
+        <img src="./assets/wraper.png" class="w-100" alt="game photo" />
+      </header>
+
+      <nav
+        class="navbar navbar-expand-lg nav-bg position-sticky top-0 z-3 col-md-6 col-lg-9"
+      >
+        <div class="container">
+          <h5 class="navbar-brand mb-0 text-uppercase">
+            <img
+              src="./assets/logo-sm.png "
+              alt="logo photo"
+              style="max-width: 40px"
+            />
+            Game Reviews
+          </h5>
+          <button
+            class="navbar-toggler collapsed"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="small navbar-collapse collapse"
+            id="navbarSupportedContent"
+            style=""
+          >
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 menu small">
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link text-uppercase active"
+                  aria-current="page"
+                  data-category="mmorpg"
+                  >mmorpg</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link text-uppercase"
+                  data-category="shooter"
+                  >shooter</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link text-uppercase"
+                  data-category="sailing"
+                  >sailing</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link text-uppercase"
+                  data-category="permadeath"
+                  >permadeath</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link text-uppercase"
+                  data-category="superhero"
+                  >superhero</a
+                >
+              </li>
+              <li class="nav-item">
+                <a
+                  role="button"
+                  class="nav-link text-uppercase"
+                  data-category="pixel"
+                  >pixel</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <main class="container my-5 home">
+        <section class="position-relative games">
+          <div
+            class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4"
+            id="gameData"
+          ></div>
+        </section>
+      </main>
+    </section>
+    <section class="game-details details">
+      <div class="container">
+        <div class="row" id="detailsContent"></div>
+      </div>
+    </section>
+    <div class="loading d-none"><span class="loader"></span></div>
+
+    <script src="JS/bootstrap.bundle.min.js"></script>
+    <script type="module" src="JS/index.js"></script>
+  </body>
+</html>
